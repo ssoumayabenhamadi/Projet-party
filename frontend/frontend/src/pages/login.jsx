@@ -10,19 +10,22 @@ export default function Login() {
             <h1 className="text-2xl font-bold">Connexion</h1>
             <form className="mt-4">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" />
+                <Input id="email" type="email"/>
                 <Label htmlFor="password">Mot de passe</Label>
-                <Input id="password" type="password" />
-                <Button type="submit" className="mt-4">
-                    Se connecter
-                </Button>
-
-                <Button className="mt-4">
-                    <a href = "/signup">
-                        S'inscrire
-                    </a>
-                </Button>
+                <Input id="password" type="password"/>
+                <div className="space-y-4">
+                    <Button type="submit">
+                        Se connecter
+                    </Button>
+                    <Button>
+                        <a href="/signup" className="w-full text-center">
+                            S'inscrire
+                        </a>
+                    </Button>
+                </div>
             </form>
         </div>
     );
 }
+
+
